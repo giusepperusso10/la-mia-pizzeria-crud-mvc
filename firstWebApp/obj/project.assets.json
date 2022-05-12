@@ -1828,11 +1828,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/giusepperusso/Desktop/Senza nome/firstWebApp/firstWebApp.csproj",
+      "projectUniqueName": "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/firstWebApp/firstWebApp.csproj",
       "projectName": "firstWebApp",
-      "projectPath": "/Users/giusepperusso/Desktop/Senza nome/firstWebApp/firstWebApp.csproj",
+      "projectPath": "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/firstWebApp/firstWebApp.csproj",
       "packagesPath": "/Users/giusepperusso/.nuget/packages/",
-      "outputPath": "/Users/giusepperusso/Desktop/Senza nome/firstWebApp/obj/",
+      "outputPath": "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/firstWebApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/giusepperusso/.nuget/NuGet/NuGet.Config"

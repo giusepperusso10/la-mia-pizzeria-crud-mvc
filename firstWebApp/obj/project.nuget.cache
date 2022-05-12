@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4nUbLMt/Hcx1z8vTySfqM34fRySUIcjrfhJ/jAinY+7Bo+tX05eux73D84zmKlcZyfAe5/zUyIQOjj9dXe4G+Q==",
+  "dgSpecHash": "GbpZ7Q8ax3JcKlkv4F4W+oswwTJTT5M0uXw0xW0hjEX5TKhkCWBVbWTKqznDdcwiA0qLsv8p8NgjuG76275FnQ==",
   "success": true,
-  "projectFilePath": "/Users/giusepperusso/Desktop/Senza nome/firstWebApp/firstWebApp.csproj",
+  "projectFilePath": "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/firstWebApp/firstWebApp.csproj",
   "expectedPackageFiles": [
     "/Users/giusepperusso/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/giusepperusso/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
