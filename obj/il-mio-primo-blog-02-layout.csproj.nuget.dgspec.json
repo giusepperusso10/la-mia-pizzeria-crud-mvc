@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj": {}
+    "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/il-mio-primo-blog-02-layout.csproj": {}
   },
   "projects": {
-    "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj": {
+    "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/il-mio-primo-blog-02-layout.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj",
+        "projectUniqueName": "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/il-mio-primo-blog-02-layout.csproj",
         "projectName": "il-mio-primo-blog-02-layout",
-        "projectPath": "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj",
+        "projectPath": "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/il-mio-primo-blog-02-layout.csproj",
         "packagesPath": "/Users/giusepperusso/.nuget/packages/",
-        "outputPath": "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/obj/",
+        "outputPath": "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/giusepperusso/.nuget/NuGet/NuGet.Config"

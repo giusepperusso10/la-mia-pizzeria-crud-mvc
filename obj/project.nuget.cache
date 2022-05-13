@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F+n0Ni+o1Z/QG5WfgHZohTAfIIvywLG/6d6Wedw0ablTynnRfbOjHbXoenDj/eXY8an8MQRiRYvkwY0mwJ5uhQ==",
+  "dgSpecHash": "+wPmZ3gUuxR6hcoppG+S8PwrANaWd4GUegIAUP53gdqyMm+r5ukV6wlAQVcLdPOoNQN+tWd3ipM0H1FABA/6Mw==",
   "success": true,
-  "projectFilePath": "/Users/giusepperusso/Desktop/il-mio-primo-blog-put-delete/il-mio-primo-blog-02-layout.csproj",
+  "projectFilePath": "/Users/giusepperusso/Desktop/Esercizi Generation/la-mia-pizzeria-crud-mvc/il-mio-primo-blog-02-layout.csproj",
   "expectedPackageFiles": [
     "/Users/giusepperusso/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/6.0.4/microsoft.aspnetcore.mvc.razor.extensions.6.0.4.nupkg.sha512",
     "/Users/giusepperusso/.nuget/packages/microsoft.aspnetcore.mvc.razor.runtimecompilation/6.0.4/microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.4.nupkg.sha512",
