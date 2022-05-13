@@ -45,7 +45,7 @@ namespace NetCore_01.Controllers
                 return View("FormPost", nuovoPost);
             }
 
-            Post nuovoPostConId = new Post(PostData.GetPosts().Count, nuovoPost.Title, nuovoPost.Description, nuovoPost.Image);
+            Post nuovoPostConId = new Post(PostData.GetPosts().Count, nuovoPost.Title, nuovoPost.Description, nuovoPost.Image, nuovoPost.Price);
 
             // Il mio modello è corretto
             PostData.GetPosts().Add(nuovoPostConId);
@@ -82,6 +82,7 @@ namespace NetCore_01.Controllers
                 postOriginal.Title = model.Title;
                 postOriginal.Description = model.Description;
                 postOriginal.Image = model.Image;
+                postOriginal.Price = model.Price;
 
                 return RedirectToAction("Index");
             } else
