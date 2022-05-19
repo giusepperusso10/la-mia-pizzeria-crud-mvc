@@ -4,150 +4,68 @@
     <div class="row">
         <div class="col-12">
             <div class="d-flex justify-content-between align-items-center">
-                <h1 class="mt-3 mb-3">Lista pizze</h1>
+                <h1 class="mt-3 mb-3">Lista posts</h1>
             </div>
-            <strong>Vuoi aggiungere una pizza ? Clicca qui !</strong>
+
             <a class="btn btn-primary"
-               href="@Url.Action("Create", "Post")">
-                Nuova Pizza
+                href="@Url.Action("Create", "Post")">
+                Nuovo post
             </a>
 
+            @if(Model.Count() == 0)
+            {
+                <h3>Non ci sono pizze Presenti</h3>
+            } else
+            {
+                <table class="table post-list-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Immagine</th>
+                        <th>Titolo</th>
+                        <th>Descrizione</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-          
-
-                <br />
-                <div class="container">
-                    <div class="ro">
-                        <div class="col no-float">
-                            <div class="row mb-3">
-                                <div class="col">
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="/img/prosciutto.png" class="card-img-top" alt="pizzaprosciuttofunghi">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <span><strong>Prosciutto e funghi</strong></span><br />Fiordilatte del Matese, funghi champignon, Prosciutto cotto Bonfatti Olio evo e basilico <br /><span><strong>Prezzo: 12€</strong></span>
-                                            </p>
-                                            <a class="btn btn-info btn-sm" href="@Url.Action("Details", "Post")">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="/img/salsicciaefriarelli.png" class="card-img-top" alt="pizzaSalefriarelli">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <span><strong>Salsiccia e friarelli</strong></span><br />Provola di Agerola Affumicata in paglia, Friarielli Salsiccia a punta di coltello<br /><span><strong>Prezzo: 14€</strong></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="/img/prosciutto.png" class="card-img-top" alt="pizzaprosciuttofunghi">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <span><strong>Prosciutto e funghi</strong></span><br />Fiordilatte del Matese, funghi champignon, Prosciutto cotto Bonfatti Olio evo e basilico <br /><span><strong>Prezzo: 12€</strong></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="/img/acciughe.png" class="card-img-top" alt="pizzaacciughe">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <span><strong>Acciughina</strong></span><br />Pomodoro pelato italiano, Fiordilatte del Matese, Acciughe del cantabrico, capperi di Salina <br /><span><strong>Prezzo: 15€</strong></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Seconda riga -->
-
-                            <div class="row mb-3">
-                                <div class="col">
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="/img/4formaggi.png" class="card-img-top" alt="pizza4formaggi">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <span><strong>4 Formaggi</strong></span><br />Fiordilatte del Matese, Fontina valdostana, Emmentaler, Gorgonzola, Parmigiano Reggiano<br /><span><strong>Prezzo: 11€</strong></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="/img/calzone.png" class="card-img-top" alt="calzone">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <span><strong>Calzone 2.0</strong></span><br />Pomodoro pelato italiano, Fiordilatte del Matese, Salame di Mugnano del Cardinale, Ricotta di bufala<br /><span><strong>Prezzo: 15€</strong></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="/img/diavola.png" class="card-img-top" alt="pizzadiavola">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <span><strong>Inferno</strong></span><br />Pomodoro pelato italiano, Spianata calabrese, Provola di Agerola, Parmigiano Reggiano<br /><span><strong>Prezzo: 13€</strong></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card" style="width: 15rem;">
-                                        <img src="/img/regina.png" class="card-img-top" alt="pizzaregina">
-                                        <div class="card-body">
-                                            <p class="card-text">
-                                                <span><strong>Regina</strong></span><br />Pomodorini datterini, Mozzarella di bufala, Parmigiano Reggiano, Olio evo e basilico<br /><span><strong>Prezzo: 14€</strong></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Terza riga -->
-
-                            <div class="row mb-3">
-                                
-                                    @foreach (Post postDellaLista in Model)
-                                    {
-                                        <div class="col">
-                                            <div class="card" style="width: 15rem;">
-                                                <img src="@postDellaLista.Image" class="card-img-top" alt="pizzamarinara">
-                                                <div class="card-body">
-                                                    <p class="card-text">
-                                                        <span><strong>@postDellaLista.Title</strong></span><br />@postDellaLista.Description<br /><span><strong>Prezzo: @postDellaLista.Price €</strong></span>
-                                                    </p>
-                                                    <a class="btn btn-info btn-sm" href="@Url.Action("Details", "Post", new { id = postDellaLista.Id })">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                                                    </a>
-                                                    <a class="btn btn-warning btn-sm" href="@Url.Action("Update", "Post", new { id = postDellaLista.Id })">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon><line x1="3" y1="22" x2="21" y2="22"></line></svg>
-                                                    </a>
-                                                    <form action="@Url.Action("Delete", "Post", new {id= postDellaLista.Id})" method="post">
-                                                        @Html.AntiForgeryToken()
-                                                        <button type="submit" class="btn btn-danger btn-sm">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                                                        </button>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    }
-
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-          
+                        @foreach(Post postDellaLista in Model)
+                        {
+                            <tr>
+                                <td>@postDellaLista.Id</td>
+                                <!-- questo è un esempio con url immagine esterna alla webapp attuale -->
+                                <td class="image"><img class="post-list-image" src="@postDellaLista.Image"></td>
+                                <td class="title">@postDellaLista.Title</td>
+                                <td class="description">@postDellaLista.Description</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm" href="@Url.Action("Details", "Post", new { id = postDellaLista.Id})">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                    </a>
+                                    <a class="btn btn-warning btn-sm" href="@Url.Action("Update", "Post", new { id = postDellaLista.Id })">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon><line x1="3" y1="22" x2="21" y2="22"></line></svg>
+                                    </a>
+                                    <form action="@Url.Action("Delete", "Post", new {id= postDellaLista.Id})" method="post">
+                                        @Html.AntiForgeryToken()
+                                        <button type="submit" class="btn btn-danger btn-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            
+                        }
+                  </tbody>
+                </table>
+            }
         </div>
     </div>
 </div>
-        
+
+@section OtherSection {
+
+<footer>
+    <div class="container">
+        <p>Footer</p>
+    </div>
+</footer>
+}
+
